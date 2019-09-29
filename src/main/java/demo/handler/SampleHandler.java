@@ -9,10 +9,10 @@ import demo.external.SampleExternalServiceDAO;
  * Handler class to simulate a class that handles business logic
  */
 public class SampleHandler {
-    @ExternalCall("SampleExternalServiceDAO")
+    @ExternalCall("SampleExternalService")
     private final SampleExternalServiceDAO sampleExternalServiceDAO;
 
-    @ExternalCall("SampleDatabaseDAO")
+    @ExternalCall("SampleDatabase")
     private final SampleDatabaseDAO sampleDatabaseDAO;
 
 

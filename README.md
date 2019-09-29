@@ -1,2 +1,2 @@
 # ServiceMapAnnotation
-Custom annotation to generate a service map graph
+Custom annotation to generate a service map graph.
