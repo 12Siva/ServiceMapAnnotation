@@ -1,0 +1,7 @@
+strict digraph G {
+  SampleHandler [ label="SampleHandler" ];
+  SampleExternalServiceDAO [ label="SampleExternalServiceDAO" ];
+  SampleDatabaseDAO [ label="SampleDatabaseDAO" ];
+  SampleHandler -> SampleExternalServiceDAO;
+  SampleHandler -> SampleDatabaseDAO;
+}
