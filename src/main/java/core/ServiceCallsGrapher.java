@@ -41,6 +41,7 @@ public class ServiceCallsGrapher {
         final Graph<String, DefaultEdge> fieldsGraph = new DefaultDirectedGraph<>(DefaultEdge.class);
         final String sourceName = klass.getSimpleName();
         fieldsGraph.addVertex(sourceName);
+        //TODO: Recursively get all fields
         for (final Field field : klass.getDeclaredFields()) {
             if (field.isAnnotationPresent(ExternalCall.class)) {
                 final String fieldName = field.getAnnotation(ExternalCall.class).value();
